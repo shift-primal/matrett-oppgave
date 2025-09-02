@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Oppgave</title>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Syne:wght@400..800&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			defer
+			src="app.js"
+		></script>
+	</head>
+	<body>
+		<main>
+			<div
+				class="container"
+				id="container"
+			>
+				<div id="header">
+					<span class="text-normal"
+						>Hvilken<span class="text-orange"> matrett </span>er du<span class="text-orange">?</span></span
+					>
+					<h6>* Ikke affiliert med BuzzFeed</h6>
+				</div>
+				<div id="inputs-container">
+					<form id="inputs-form">
+						<div id="name-container">
+							<label for="name">Navn:</label>
+							<input
+								type="text"
+								id="name"
+								required="true"
+							/>
+						</div>
+						<div id="personality-container">
+							<label for="personality-select">Personlighet:</label>
+							<select
+								name="personality"
+								id="personality-select"
+								required="true"
+							>
+								<option
+									value=""
+									disabled="true"
+									selected="true"
+								>
+									--Velg noe--
+								</option>
+								<option value="gladfis">Gladfis</option>
+								<option value="sinna">Sinna</option>
+								<option value="mystisk">Mystisk</option>
+								<option value="irriterende">Irriterende</option>
+								<option value="søtnos">Søtnos</option>
+							</select>
+						</div>
+						<input
+							id="submit-btn"
+							type="submit"
+							value="Send inn"
+						/>
+					</form>
+				</div>
+				<div id="message-container"></div>
+			</div>
+		</main>
+	</body>
+</html>
